@@ -1,0 +1,81 @@
+body{
+  background-image:url("../img/back.jpg");
+}
+.header{
+  display: flex;
+  padding: 15px;
+  width: 100%;
+  margin: auto;
+}
+.header div{
+  text-align:center;
+}
+.header h1{
+  color:tomato ;
+  font-family: serif;
+  font-style: italic;
+  font-size:55px;
+}
+.header img{
+  padding: 5px;
+  margin-left: 50px;
+}
+.nav{
+  padding-top: 50px;
+  margin-left: 380px;
+  overflow: hidden;
+  background: none;
+}
+
+.nav a{
+  display: block;
+  float:right;
+  color:black;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: tomato;
+}
+.nav a:hover{
+  color: black;
+}
+
+.hline{
+  margin-left: 2.5%;
+  width: 95%;
+  height: 1px;
+  background-color:tomato;
+}
+.items{
+  padding-left: 20px;
+}
+.card{
+  position: relative;
+  width: 150px;
+  height: 200px;
+  box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  padding: 2px;
+}
+.image{
+   opacity: 1;
+   transition: .5s ease;
+}
+.middle{
+  padding-left: 20px;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+}
+.card:hover .image{
+  opacity: 0.5;
+}
+.card:hover .middle {
+  opacity: 1;
+}
+.buy{
+  color: black;
+  font-size: 14px;
+  padding: 16px 32px;
+}
