@@ -21,7 +21,37 @@
       </div>
     </header>
     <div class="hline"></div>
-  <div class="items">
+    <div class="slide">
+      <img class="mySlides" src="./img/laptop.jpg" style="width:100%">
+      <img class="mySlides" src="./img/mobile.jpg" style="width:100%">
+      <img class="mySlides" src="./img/tv.jpg" style="width:100%">
+      <button class="button" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="button" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n)
+    {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n)
+    {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++)
+    {
+      x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+    }
+</script>
+ <!--<div class="items">
     <div class="card">
       <img src="./img/s9.jpg" alt="Samsung Galaxy S9" style="width:100%" class="image">
       <div class="middle">
@@ -42,6 +72,16 @@
         <h5>OnePlus 6T</h5>
         <h5>Rs. 39000</h5>
     </div>
+  <div class="card">
+    <img src="./img/O6t.jpg" alt="OnePlus 6T" style="width:100%" class="image">
+    <div class="middle">
+      <div class="buy">
+        <button type="button" name="button">Buy</button>
+      </div>
+    </div>
+      <h5>OnePlus 6T</h5>
+      <h5>Rs. 39000</h5>
   </div>
+</div> -->
   </body>
 </html>
